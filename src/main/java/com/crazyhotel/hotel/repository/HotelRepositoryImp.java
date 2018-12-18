@@ -28,6 +28,32 @@ public class HotelRepositoryImp implements HotelRepository {
         );
 
         collection.add(new Hotel.Builder()
+                .fromDate("2019-01-01T00:00:00.000Z")
+                .toDate("2019-12-31T00:00:00.000Z")
+                .city("AUH")
+                .numberOfAdults(10)
+                .hotelName("Grand Hotel")
+                .farePerNight(new BigDecimal(30))
+                .amenities(new String [] {"Wifi","parking","TV"})
+                .rate("*,*****")
+                .discount("0")
+                .build()
+        );
+
+        collection.add(new Hotel.Builder()
+                .fromDate("2019-01-01T00:00:00.000Z")
+                .toDate("2019-06-31T00:00:00.000Z")
+                .city("AUH")
+                .numberOfAdults(10)
+                .hotelName("Queen Hotel")
+                .farePerNight(new BigDecimal(50))
+                .amenities(new String [] {"Wifi","parking","TV"})
+                .rate("***,*****")
+                .discount("0")
+                .build()
+        );
+
+        collection.add(new Hotel.Builder()
                 .fromDate("2019-05-01T00:00:00.000Z")
                 .toDate("2019-12-31T00:00:00.000Z")
                 .city("AUH")
@@ -50,6 +76,45 @@ public class HotelRepositoryImp implements HotelRepository {
                 .amenities(new String [] {"Wifi","parking","TV", "Smoking Room"})
                 .rate("*****,*****")
                 .discount("")
+                .build()
+        );
+
+        collection.add(new Hotel.Builder()
+                .fromDate("2019-01-01T00:00:00.000Z")
+                .toDate("2019-12-31T00:00:00.000Z")
+                .city("DXB")
+                .numberOfAdults(10)
+                .hotelName("Regency Palace Dubai")
+                .farePerNight(new BigDecimal(90))
+                .amenities(new String [] {"Wifi","TV", "Smoking Room"})
+                .rate("****,*****")
+                .discount("")
+                .build()
+        );
+
+        collection.add(new Hotel.Builder()
+                .fromDate("2019-01-01T00:00:00.000Z")
+                .toDate("2019-12-31T00:00:00.000Z")
+                .city("DXB")
+                .numberOfAdults(10)
+                .hotelName("Rayan Dubai")
+                .farePerNight(new BigDecimal(60))
+                .amenities(new String [] {"Wifi", "Smoking Room"})
+                .rate("***,*****")
+                .discount("30")
+                .build()
+        );
+
+        collection.add(new Hotel.Builder()
+                .fromDate("2019-01-01T00:00:00.000Z")
+                .toDate("2019-12-31T00:00:00.000Z")
+                .city("DXB")
+                .numberOfAdults(10)
+                .hotelName("Royal Dubai")
+                .farePerNight(new BigDecimal(200))
+                .amenities(new String [] {"Wifi","TV", "Smoking Room"})
+                .rate("*****,*****")
+                .discount("30")
                 .build()
         );
     }
