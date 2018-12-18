@@ -42,7 +42,7 @@ public class HotelRepositoryImp implements HotelRepository {
 
         collection.add(new Hotel.Builder()
                 .fromDate("2019-01-01T00:00:00.000Z")
-                .toDate("2019-06-31T00:00:00.000Z")
+                .toDate("2019-06-30T00:00:00.000Z")
                 .city("AUH")
                 .numberOfAdults(10)
                 .hotelName("Queen Hotel")
@@ -117,6 +117,7 @@ public class HotelRepositoryImp implements HotelRepository {
                 .discount("30")
                 .build()
         );
+
     }
 
     public Collection<Hotel> getHotels(CrazyHotelRequest request) {
